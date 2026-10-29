@@ -1,7 +1,6 @@
 ---
 name: hunting-for-webshell-activity
-description: Hunt for web shell deployments on internet-facing servers by analyzing file creation in web directories, suspicious
-  process spawning from web servers, and anomalous HTTP patterns.
+description: Runs a hypothesis-driven threat hunt for web shell deployment (T1505.003) on internet-facing servers by analyzing file creation in web directories, suspicious child-process spawning from web server processes, and anomalous HTTP request patterns. Use when hunting for web shells after a public-facing app compromise, when EDR/SIEM alerts fire on webserver process anomalies, or during incident response on internet-facing infrastructure.
 domain: cybersecurity
 subdomain: threat-hunting
 tags:
@@ -26,6 +25,12 @@ nist_csf:
 - DE.AE-02
 - DE.AE-07
 - ID.RA-05
+mitre_attack:
+- T1046
+- T1057
+- T1082
+- T1083
+- T1547
 ---
 
 # Hunting For Webshell Activity

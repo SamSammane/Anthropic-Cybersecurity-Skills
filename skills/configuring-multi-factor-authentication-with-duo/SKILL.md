@@ -1,7 +1,10 @@
 ---
 name: configuring-multi-factor-authentication-with-duo
-description: Deploy Cisco Duo multi-factor authentication across enterprise applications, VPN, RDP, and SSH access points.
-  This skill covers Duo integration methods, adaptive authentication policies, device trust
+description: Deploys Cisco Duo multi-factor authentication across enterprise applications,
+  VPN, RDP, and SSH access points, covering Duo Authentication Proxy setup, adaptive
+  authentication policies, device trust assessment, and phishing-resistant WebAuthn/FIDO2
+  deployment aligned with NIST 800-63B AAL2/AAL3. Use when adding or hardening MFA
+  for remote access, VPN, or privileged logins with Duo.
 domain: cybersecurity
 subdomain: identity-access-management
 tags:
@@ -20,6 +23,12 @@ nist_csf:
 - PR.AA-02
 - PR.AA-05
 - PR.AA-06
+mitre_attack:
+- T1621
+- T1110.004
+- T1110.003
+- T1078
+- T1556.006
 ---
 # Configuring Multi-Factor Authentication with Duo
 

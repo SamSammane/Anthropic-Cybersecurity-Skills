@@ -1,7 +1,9 @@
 ---
 name: configuring-tls-1-3-for-secure-communications
-description: TLS 1.3 (RFC 8446) is the latest version of the Transport Layer Security protocol, providing significant improvements
-  over TLS 1.2 in both security and performance. It reduces handshake latency to 1-R
+description: Configures TLS 1.3 (RFC 8446) on servers, covering cipher suite and
+  key-exchange group selection, and validates the resulting configuration with openssl
+  s_client and testssl.sh. Use when deploying or hardening TLS 1.3 for secure communications,
+  or when testing a server for common TLS misconfigurations and vulnerabilities.
 domain: cybersecurity
 subdomain: cryptography
 tags:
@@ -17,6 +19,12 @@ nist_csf:
 - PR.DS-01
 - PR.DS-02
 - PR.DS-10
+mitre_attack:
+- T1557
+- T1040
+- T1573.002
+- T1539
+- T1556.004
 ---
 # Configuring TLS 1.3 for Secure Communications
 

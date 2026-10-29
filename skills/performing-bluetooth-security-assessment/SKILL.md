@@ -1,6 +1,10 @@
 ---
 name: performing-bluetooth-security-assessment
-description: Assess Bluetooth Low Energy device security by scanning, enumerating GATT services, and detecting vulnerabilities
+description: Assess Bluetooth Low Energy (BLE) device security using Python's bleak asyncio
+  library to discover nearby devices, enumerate GATT services and characteristics, and flag
+  unencrypted or unauthenticated read/write access to sensitive data. Use when auditing IoT,
+  healthcare, fitness, or smart-home BLE devices for weak pairing configurations or known
+  vulnerable device fingerprints.
 domain: cybersecurity
 subdomain: wireless-security
 tags:
@@ -15,6 +19,9 @@ nist_csf:
 - PR.IR-01
 - DE.CM-01
 - ID.AM-03
+mitre_attack:
+- T1557
+- T1040
 ---
 
 

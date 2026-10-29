@@ -1,7 +1,10 @@
 ---
 name: building-role-mining-for-rbac-optimization
-description: Apply bottom-up and top-down role mining techniques to discover optimal RBAC roles from existing user-permission
-  assignments, reducing role explosion and enforcing least privilege.
+description: Apply bottom-up and top-down role mining techniques, including clustering
+  algorithms and formal concept analysis, to discover optimal RBAC roles from existing
+  user-permission assignments, consolidating overlapping roles and enforcing least
+  privilege. Use when an identity program needs to reduce role explosion or redesign
+  its RBAC role set from access data.
 domain: cybersecurity
 subdomain: identity-access-management
 tags:
@@ -19,6 +22,10 @@ nist_csf:
 - PR.AA-02
 - PR.AA-05
 - PR.AA-06
+mitre_attack:
+- T1078
+- T1098
+- T1069
 ---
 
 # Building Role Mining for RBAC Optimization

@@ -1,7 +1,10 @@
 ---
 name: hunting-for-registry-persistence-mechanisms
-description: Hunt for registry-based persistence mechanisms including Run keys, Winlogon modifications, IFEO injection, and
-  COM hijacking in Windows environments.
+description: Hunts for registry-based persistence mechanisms (MITRE T1547) in Windows
+  environments, including Run/RunOnce keys, Winlogon Shell/Userinit modifications, Image
+  File Execution Options (IFEO) debugger injection, and COM hijacking via CLSID overrides.
+  Use when auditing the registry for persistence artifacts or building detections for
+  registry-based malware autostart techniques.
 domain: cybersecurity
 subdomain: threat-hunting
 tags:
@@ -26,6 +29,12 @@ nist_csf:
 - DE.AE-02
 - DE.AE-07
 - ID.RA-05
+mitre_attack:
+- T1046
+- T1057
+- T1082
+- T1083
+- T1547
 ---
 
 # Hunting For Registry Persistence Mechanisms

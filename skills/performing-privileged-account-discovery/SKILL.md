@@ -1,7 +1,10 @@
 ---
 name: performing-privileged-account-discovery
-description: Discover and inventory all privileged accounts across enterprise infrastructure including domain admins, local
-  admins, service accounts, database admins, cloud IAM roles, and application admin account
+description: Discovers and inventories privileged accounts across enterprise infrastructure,
+  including domain admins, local admins, service accounts, database admins, cloud
+  IAM roles, and application admin accounts, using automated scanning and risk classification.
+  Use when building a privileged account inventory, onboarding accounts to a PAM
+  solution, or scoping which accounts need privileged-access controls.
 domain: cybersecurity
 subdomain: identity-access-management
 tags:
@@ -19,6 +22,12 @@ nist_csf:
 - PR.AA-02
 - PR.AA-05
 - PR.AA-06
+mitre_attack:
+- T1078
+- T1110
+- T1556
+- T1098
+- T1078.004
 ---
 # Performing Privileged Account Discovery
 

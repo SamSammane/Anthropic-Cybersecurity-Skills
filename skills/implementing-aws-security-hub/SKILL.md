@@ -1,9 +1,10 @@
 ---
 name: implementing-aws-security-hub
-description: 'This skill covers deploying AWS Security Hub as a centralized cloud security posture management platform that
-  aggregates findings from GuardDuty, Inspector, Macie, and third-party tools. It details enabling security standards like
-  CIS AWS Foundations Benchmark, configuring automated remediation, and building executive dashboards for compliance tracking
-  across multi-account AWS organizations.
+description: 'Deploy AWS Security Hub as a centralized CSPM platform, backed by AWS
+  Config, aggregating findings from GuardDuty, Inspector, Macie, and third-party tools;
+  enable CIS Foundations, PCI-DSS, and NIST standards; automate remediation via EventBridge/Systems
+  Manager; and produce Audit Manager evidence. Use for a centralized findings dashboard
+  or compliance audit evidence; not for threat detection or container scanning.
 
   '
 domain: cybersecurity
@@ -22,6 +23,11 @@ nist_csf:
 - ID.AM-08
 - GV.SC-06
 - DE.CM-01
+mitre_attack:
+- T1078.004
+- T1530
+- T1537
+- T1580
 ---
 
 # Implementing AWS Security Hub

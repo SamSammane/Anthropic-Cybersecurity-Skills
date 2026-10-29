@@ -1,8 +1,11 @@
 ---
 name: implementing-azure-defender-for-cloud
-description: 'Implementing Microsoft Defender for Cloud to enable cloud security posture management, workload protection across
-  VMs, containers, databases, and storage, configure security recommendations, and set up adaptive security controls with
-  automated remediation.
+description: 'Enable Microsoft Defender for Cloud (CSPM + CWPP) across VMs, containers,
+  SQL, storage, and Key Vault, using Azure Policy for evaluation, Log Analytics for
+  telemetry, Azure Arc for hybrid coverage, and Logic Apps for automated response.
+  Use for Azure security monitoring, adaptive remediation, or regulatory compliance
+  assessment; not for non-Azure-only protection or identity defense (Defender for
+  Identity).
 
   '
 domain: cybersecurity
@@ -30,6 +33,12 @@ nist_csf:
 - ID.AM-08
 - GV.SC-06
 - DE.CM-01
+mitre_attack:
+- T1078.004
+- T1530
+- T1537
+- T1580
+- T1610
 ---
 
 # Implementing Azure Defender for Cloud

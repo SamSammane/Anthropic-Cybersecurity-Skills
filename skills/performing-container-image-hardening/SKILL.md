@@ -1,8 +1,11 @@
 ---
 name: performing-container-image-hardening
-description: 'This skill covers hardening container images by minimizing attack surface, removing unnecessary packages, implementing
-  multi-stage builds, configuring non-root users, and applying CIS Docker Benchmark recommendations to produce secure production-ready
-  images.
+description: 'Harden container images by minimizing attack surface, stripping unnecessary
+  packages, implementing multi-stage builds, configuring non-root users, and applying
+  CIS Docker Benchmark recommendations to produce secure, production-ready images.
+  Use when building production container images, when compliance requires CIS Docker
+  Benchmark adherence, or when shrinking image size to reduce vulnerability exposure
+  from unused packages.
 
   '
 domain: cybersecurity
@@ -22,6 +25,12 @@ nist_csf:
 - GV.SC-07
 - ID.IM-04
 - PR.PS-04
+mitre_attack:
+- T1195
+- T1554
+- T1059.004
+- T1610
+- T1611
 ---
 
 # Performing Container Image Hardening

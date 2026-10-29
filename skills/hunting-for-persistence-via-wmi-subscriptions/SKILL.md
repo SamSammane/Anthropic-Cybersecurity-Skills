@@ -1,7 +1,10 @@
 ---
 name: hunting-for-persistence-via-wmi-subscriptions
-description: Hunt for adversary persistence through Windows Management Instrumentation event subscriptions by monitoring WMI
-  consumer, filter, and binding creation events that execute malicious code triggered by system events.
+description: Hunts for adversary persistence via WMI event subscriptions (MITRE T1546.003)
+  by monitoring the creation of WMI event filters, consumers, and filter-to-consumer
+  bindings that trigger malicious code execution on system events. Use when investigating
+  fileless, trigger-based persistence on Windows hosts or auditing WMI repository
+  contents for malicious event subscriptions.
 domain: cybersecurity
 subdomain: threat-hunting
 tags:
@@ -25,6 +28,12 @@ nist_csf:
 - DE.AE-02
 - DE.AE-07
 - ID.RA-05
+mitre_attack:
+- T1046
+- T1057
+- T1082
+- T1083
+- T1547
 ---
 
 # Hunting for Persistence via WMI Subscriptions

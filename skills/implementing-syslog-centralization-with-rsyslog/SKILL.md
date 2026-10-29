@@ -1,15 +1,20 @@
 ---
 name: implementing-syslog-centralization-with-rsyslog
-description: Configure rsyslog for centralized log collection with TLS encryption, custom templates, and log rotation. Generates
-  server and client configuration files with GnuTLS stream drivers, x509 certificate authentication, per-host log segregation,
-  and reliable queue settings for high-availability syslog infrastructure.
+description: Configure rsyslog for centralized log collection with TLS encryption,
+  custom templates, and log rotation, generating server and client configuration
+  files with GnuTLS stream drivers, x509 certificate authentication, per-host log
+  segregation, and reliable queue settings. Use when building a centralized, encrypted
+  syslog pipeline, hardening rsyslog client/server configs for high-availability log
+  infrastructure, or troubleshooting TLS-based syslog forwarding.
 domain: cybersecurity
 subdomain: security-operations
 tags:
-- implementing
 - syslog
-- centralization
-- with
+- rsyslog
+- log-centralization
+- tls-encryption
+- log-management
+- security-operations
 version: '1.0'
 author: mahipal
 license: Apache-2.0
@@ -18,6 +23,12 @@ nist_csf:
 - RS.MA-01
 - GV.OV-01
 - DE.AE-02
+mitre_attack:
+- T1078
+- T1190
+- T1059
+- T1573
+- T1486
 ---
 
 

@@ -1,7 +1,9 @@
 ---
 name: testing-api-security-with-owasp-top-10
-description: Systematically assessing REST and GraphQL API endpoints against the OWASP API Security Top 10 risks using automated
-  and manual testing techniques.
+description: Systematically assesses REST, GraphQL, and gRPC API endpoints against the OWASP
+  API Security Top 10 (2023) using Burp Suite and Postman for automated and manual testing.
+  Use during authorized API penetration tests, before deploying new endpoints to production,
+  or when validating API gateway controls and rate limiting.
 domain: cybersecurity
 subdomain: web-application-security
 tags:
@@ -20,6 +22,11 @@ nist_csf:
 - ID.RA-01
 - PR.DS-10
 - DE.CM-01
+mitre_attack:
+- T1190
+- T1059.007
+- T1505.003
+- T1083
 ---
 
 # Testing API Security with OWASP Top 10

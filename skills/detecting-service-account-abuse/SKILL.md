@@ -1,7 +1,11 @@
 ---
 name: detecting-service-account-abuse
-description: Detect abuse of service accounts through anomalous interactive logons, privilege escalation, lateral movement,
-  and unauthorized access patterns.
+description: Detect abuse of service accounts by hunting for anomalous interactive
+  logons, privilege escalation, and lateral movement using EDR/SIEM telemetry
+  (CrowdStrike Falcon, Microsoft Defender, Splunk, Elastic Security, Sysmon,
+  Velociraptor) and Sigma detection rules. Use when hunting for service-account
+  misuse or investigating a service account performing unexpected interactive
+  logons.
 domain: cybersecurity
 subdomain: threat-hunting
 tags:
@@ -25,6 +29,11 @@ nist_csf:
 - DE.AE-02
 - DE.AE-07
 - ID.RA-05
+mitre_attack:
+- T1078.002
+- T1021.001
+- T1098.001
+- T1550.002
 ---
 
 # Detecting Service Account Abuse

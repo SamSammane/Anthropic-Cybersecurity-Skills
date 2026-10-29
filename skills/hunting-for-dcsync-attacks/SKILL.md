@@ -1,7 +1,6 @@
 ---
 name: hunting-for-dcsync-attacks
-description: Detect DCSync attacks by analyzing Windows Event ID 4662 for unauthorized DS-Replication-Get-Changes requests
-  from non-domain-controller accounts.
+description: Detect DCSync attacks (MITRE ATT&CK T1003.006) by analyzing Windows Event ID 4662 (AccessMask 0x100) for DS-Replication-Get-Changes and DS-Replication-Get-Changes-All requests issued by non-domain-controller accounts. Use when hunting for DCSync credential theft, after detecting Mimikatz-class tooling, or during incident response and purple-team exercises involving Active Directory replication abuse.
 domain: cybersecurity
 subdomain: threat-hunting
 tags:
@@ -27,6 +26,12 @@ nist_csf:
 - DE.AE-02
 - DE.AE-07
 - ID.RA-05
+mitre_attack:
+- T1046
+- T1057
+- T1082
+- T1083
+- T1003
 ---
 
 # Hunting for DCSync Attacks

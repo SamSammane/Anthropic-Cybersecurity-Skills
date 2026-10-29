@@ -1,10 +1,6 @@
 ---
 name: implementing-zero-trust-for-saas-applications
-description: 'Implementing zero trust access controls for SaaS applications using CASB, SSPM, conditional access policies,
-  OAuth app governance, and session controls to enforce identity verification, device compliance, and data protection for
-  cloud-hosted services.
-
-  '
+description: Secures SaaS apps (Microsoft 365, Google Workspace, Salesforce, Slack) via CASB/SSPM deployment, conditional access policies, OAuth app governance, and session-level DLP controls enforcing identity verification and device compliance. Use when adding MFA/device-compliance conditional access, discovering shadow IT, governing OAuth consent grants, or applying session controls to sensitive SaaS data.
 domain: cybersecurity
 subdomain: zero-trust-architecture
 tags:
@@ -23,6 +19,12 @@ nist_csf:
 - PR.AA-05
 - PR.IR-01
 - GV.PO-01
+mitre_attack:
+- T1078
+- T1190
+- T1059
+- T1078.004
+- T1530
 ---
 
 # Implementing Zero Trust for SaaS Applications

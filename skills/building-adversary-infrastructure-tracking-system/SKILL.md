@@ -1,7 +1,6 @@
 ---
 name: building-adversary-infrastructure-tracking-system
-description: Build an automated system to track adversary infrastructure using passive DNS, certificate transparency, WHOIS
-  data, and IP enrichment to map and monitor threat actor command-and-control networks.
+description: Build an automated adversary infrastructure tracking system in Python (dnspython, python-whois, shodan, networkx) that pivots across passive DNS, certificate transparency logs, WHOIS records, and IP enrichment to map threat-actor C2 networks and flag newly registered domains matching known patterns. Use when pivoting from known indicators to discover related C2 infrastructure or maintaining a continuously updated map of a threat actor's network.
 domain: cybersecurity
 subdomain: threat-intelligence
 tags:
@@ -21,6 +20,12 @@ nist_csf:
 - ID.RA-05
 - DE.CM-01
 - DE.AE-02
+mitre_attack:
+- T1583.001
+- T1583.004
+- T1596.001
+- T1590.002
+- T1071.001
 ---
 # Building Adversary Infrastructure Tracking System
 

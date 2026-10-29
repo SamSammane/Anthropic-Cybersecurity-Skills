@@ -1,7 +1,6 @@
 ---
 name: hunting-for-scheduled-task-persistence
-description: Hunt for adversary persistence via Windows Scheduled Tasks by analyzing task creation events, suspicious task
-  actions, and unusual scheduling patterns.
+description: Runs a hypothesis-driven threat hunt for Windows Scheduled Task persistence (T1053), guiding SIEM/EDR queries against task creation events (e.g. Event ID 4698), suspicious task actions, and unusual scheduling patterns. Use when hunting for scheduled-task persistence, after threat intel flags related campaigns, during incident response, or when alerts fire on schtasks/at.exe activity.
 domain: cybersecurity
 subdomain: threat-hunting
 tags:
@@ -25,6 +24,12 @@ nist_csf:
 - DE.AE-02
 - DE.AE-07
 - ID.RA-05
+mitre_attack:
+- T1046
+- T1057
+- T1082
+- T1083
+- T1547
 ---
 
 # Hunting For Scheduled Task Persistence

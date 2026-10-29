@@ -1,7 +1,10 @@
 ---
 name: performing-access-review-and-certification
-description: Conduct systematic access reviews and certifications to ensure users have appropriate access rights aligned with
-  their roles. This skill covers review campaign design, reviewer selection, risk-based p
+description: Designs and runs access review and certification campaigns-scoping,
+  reviewer selection, risk-based prioritization, micro-certification, and remediation
+  tracking-to verify user access matches job roles for SOX, HIPAA, and PCI DSS compliance.
+  Use when planning or executing periodic access recertification or preparing evidence
+  for an IAM compliance audit.
 domain: cybersecurity
 subdomain: identity-access-management
 tags:
@@ -20,6 +23,11 @@ nist_csf:
 - PR.AA-02
 - PR.AA-05
 - PR.AA-06
+mitre_attack:
+- T1078
+- T1110
+- T1556
+- T1098
 ---
 # Performing Access Review and Certification
 

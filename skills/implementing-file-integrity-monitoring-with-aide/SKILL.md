@@ -1,7 +1,6 @@
 ---
 name: implementing-file-integrity-monitoring-with-aide
-description: Configure AIDE (Advanced Intrusion Detection Environment) for file integrity monitoring including baseline creation,
-  scheduled integrity checks, change detection, and alerting
+description: Configures AIDE (Advanced Intrusion Detection Environment) for file integrity monitoring on Linux, covering baseline database creation, scheduled integrity checks via cron, change detection, and alerting on unauthorized modifications. Use when setting up host-based file integrity monitoring, detecting unauthorized file changes, or meeting compliance requirements for FIM on Linux systems.
 domain: cybersecurity
 subdomain: endpoint-security
 tags:
@@ -20,6 +19,11 @@ nist_csf:
 - PR.PS-02
 - DE.CM-01
 - PR.IR-01
+mitre_attack:
+- T1055
+- T1547
+- T1059
+- T1036
 ---
 
 # Implementing File Integrity Monitoring with AIDE

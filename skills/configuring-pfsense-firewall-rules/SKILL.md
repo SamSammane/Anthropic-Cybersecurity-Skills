@@ -1,7 +1,10 @@
 ---
 name: configuring-pfsense-firewall-rules
-description: 'Configures pfSense firewall rules, NAT policies, VPN tunnels, and traffic shaping to enforce network segmentation,
-  control traffic flow, and protect internal network zones in enterprise and small-to-medium business environments.
+description: 'Configures pfSense firewall rules, NAT policies, IPsec/OpenVPN tunnels,
+  and traffic shaping to enforce network segmentation and control traffic between
+  zones such as DMZ, internal, guest, and IoT. Use when deploying a pfSense perimeter
+  or internal firewall, setting up port-forwarding NAT, configuring site-to-site
+  or remote-access VPNs, or applying QoS/bandwidth policies.
 
   '
 domain: cybersecurity
@@ -20,6 +23,12 @@ nist_csf:
 - DE.CM-01
 - ID.AM-03
 - PR.DS-02
+mitre_attack:
+- T1071.001
+- T1095
+- T1572
+- T1571
+- T1041
 ---
 # Configuring pfSense Firewall Rules
 

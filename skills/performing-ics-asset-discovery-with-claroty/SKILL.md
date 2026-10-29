@@ -1,8 +1,10 @@
 ---
 name: performing-ics-asset-discovery-with-claroty
-description: 'Perform comprehensive ICS/OT asset discovery using Claroty xDome platform, leveraging passive monitoring, Claroty
-  Edge active queries, and integration ecosystem to gain full visibility into industrial control system assets including PLCs,
-  RTUs, HMIs, and network infrastructure across Purdue Model levels.
+description: 'Performs ICS/OT asset discovery with Claroty xDome, combining passive
+  monitoring and Claroty Edge active queries to inventory PLCs, RTUs, HMIs, and network
+  infrastructure across Purdue Model levels. Use when gaining visibility into an
+  undocumented OT environment, preparing an IEC 62443 asset inventory, or onboarding
+  Claroty xDome; not for IT-only discovery.
 
   '
 domain: cybersecurity
@@ -32,6 +34,12 @@ nist_csf:
 - DE.CM-01
 - ID.AM-05
 - GV.OC-02
+mitre_attack:
+- T1078
+- T1190
+- T1059
+- T0816
+- T0836
 ---
 
 # Performing ICS Asset Discovery with Claroty

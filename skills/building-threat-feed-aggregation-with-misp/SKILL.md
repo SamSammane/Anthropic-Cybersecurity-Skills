@@ -1,7 +1,6 @@
 ---
 name: building-threat-feed-aggregation-with-misp
-description: Deploy MISP (Malware Information Sharing Platform) to aggregate, correlate, and distribute threat intelligence
-  feeds from multiple sources for centralized IOC management and automated SIEM integration.
+description: Deploy MISP via Docker and configure feeds from sources like abuse.ch, AlienVault OTX, and CIRCL to aggregate, correlate, and distribute threat intelligence, including automated feed synchronization and STIX/TAXII-based integration with Splunk, Elasticsearch, and SOAR platforms. Use when standing up centralized IOC management or wiring multi-source threat feeds into a SIEM.
 domain: cybersecurity
 subdomain: threat-intelligence
 tags:
@@ -21,6 +20,10 @@ nist_csf:
 - ID.RA-05
 - DE.CM-01
 - DE.AE-02
+mitre_attack:
+- T1071
+- T1105
+- T1588.001
 ---
 # Building Threat Feed Aggregation with MISP
 

@@ -1,7 +1,11 @@
 ---
 name: implementing-identity-governance-with-sailpoint
-description: Deploy SailPoint IdentityNow or IdentityIQ for identity governance and administration. Covers identity lifecycle
-  management, access request workflows, certification campaigns, role mining, SOD policy
+description: Deploys SailPoint IdentityNow or IdentityIQ for identity governance and
+  administration, covering identity lifecycle management, access request workflows,
+  certification campaigns, role mining, separation-of-duties (SOD) policy enforcement,
+  and compliance reporting. Use when standing up or tuning an identity governance
+  program, automating access certifications, or enforcing SOD policies across
+  enterprise IAM.
 domain: cybersecurity
 subdomain: identity-access-management
 tags:
@@ -20,6 +24,38 @@ nist_csf:
 - PR.AA-02
 - PR.AA-05
 - PR.AA-06
+mitre_attack:
+- T1078
+- T1110
+- T1556
+- T1098
+mitre_f3:
+  version: '1.1'
+  tactics:
+  - positioning
+  - initial-access
+  - defense-impairment
+  techniques:
+  - id: F1005
+    name: Account Manipulation
+    tactic: positioning
+    source: f3
+  - id: F1005.002
+    name: 'Account Manipulation: Add Authorized User'
+    tactic: positioning
+    source: f3
+  - id: F1033
+    name: Insider Access Abuse
+    tactic: initial-access
+    source: f3
+  - id: F1042
+    name: Reactivate Account
+    tactic: positioning
+    source: f3
+  - id: F1006
+    name: Account Takeover
+    tactic: initial-access
+    source: f3
 ---
 # Implementing Identity Governance with SailPoint
 

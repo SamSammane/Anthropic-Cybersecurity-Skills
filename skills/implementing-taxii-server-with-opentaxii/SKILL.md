@@ -1,7 +1,10 @@
 ---
 name: implementing-taxii-server-with-opentaxii
-description: Deploy and configure an OpenTAXII server to share and consume STIX-formatted cyber threat intelligence using
-  the TAXII 2.1 protocol for automated indicator exchange between organizations.
+description: Deploy and configure a TAXII 2.1 server (Medallion) with Docker, publish
+  and consume STIX 2.1 bundles across collections, and integrate the feed with SIEM/SOAR
+  platforms for automated indicator exchange between organizations. Use when standing
+  up a TAXII server to share threat intel, configuring collections for CTI feeds,
+  or automating STIX indicator ingestion into a SIEM/SOAR.
 domain: cybersecurity
 subdomain: threat-intelligence
 tags:
@@ -21,6 +24,11 @@ nist_csf:
 - ID.RA-05
 - DE.CM-01
 - DE.AE-02
+mitre_attack:
+- T1591
+- T1592
+- T1593
+- T1589
 ---
 # Implementing TAXII Server with OpenTAXII
 

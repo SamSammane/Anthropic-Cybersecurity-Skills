@@ -1,10 +1,6 @@
 ---
 name: detecting-modbus-command-injection-attacks
-description: 'Detect command injection attacks against Modbus TCP/RTU protocol in ICS environments by monitoring for unauthorized
-  write operations, anomalous function codes, malformed frames, and deviations from established communication baselines using
-  ICS-aware IDS and protocol deep packet inspection.
-
-  '
+description: Detect command injection against Modbus TCP/RTU in ICS/SCADA environments by monitoring unauthorized writes, anomalous function codes, malformed frames, and deviations from communication baselines using ICS-aware IDS and deep packet inspection. Use when deploying IDS for Modbus OT networks, investigating unauthorized PLC register/coil changes, or responding to FrostyGoop-style Modbus attacks.
 domain: cybersecurity
 subdomain: ot-ics-security
 tags:
@@ -24,6 +20,12 @@ nist_csf:
 - DE.CM-01
 - ID.AM-05
 - GV.OC-02
+mitre_attack:
+- T1078
+- T1190
+- T1059
+- T1055
+- T0816
 ---
 
 # Detecting Modbus Command Injection Attacks

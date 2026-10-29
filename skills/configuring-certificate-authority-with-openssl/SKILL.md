@@ -1,7 +1,11 @@
 ---
 name: configuring-certificate-authority-with-openssl
-description: A Certificate Authority (CA) is the trust anchor in a PKI hierarchy, responsible for issuing, signing, and revoking
-  digital certificates. This skill covers building a two-tier CA hierarchy (Root CA +
+description: Build a two-tier PKI Certificate Authority hierarchy (offline Root CA
+  plus issuing Intermediate CA) using OpenSSL and the Python cryptography library,
+  covering certificate extensions, CRL distribution points, OCSP responder
+  configuration, and certificate policy management. Use when standing up an internal
+  CA, issuing or revoking X.509 certificates, or designing PKI trust hierarchies for
+  TLS, code-signing, or client-authentication use cases.
 domain: cybersecurity
 subdomain: cryptography
 tags:
@@ -17,6 +21,11 @@ nist_csf:
 - PR.DS-01
 - PR.DS-02
 - PR.DS-10
+mitre_attack:
+- T1649
+- T1553.004
+- T1557
+- T1587.003
 ---
 # Configuring Certificate Authority with OpenSSL
 

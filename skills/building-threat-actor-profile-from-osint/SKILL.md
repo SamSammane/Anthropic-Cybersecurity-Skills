@@ -1,13 +1,12 @@
 ---
 name: building-threat-actor-profile-from-osint
-description: Build comprehensive threat actor profiles using open-source intelligence (OSINT) techniques to document adversary
-  motivations, capabilities, infrastructure, and TTPs for proactive defense.
+description: Build threat actor profiles by collecting OSINT from vendor reports, paste sites, dark web forums, social media, and code repos, correlating indicators, mapping adversary infrastructure with tools like Maltego and SpiderFoot, and producing structured dossiers of motivations, capabilities, infrastructure, and TTPs. Use when performing attribution or building an adversary dossier from open-source intelligence.
 domain: cybersecurity
 subdomain: threat-intelligence
 tags:
 - osint
 - threat-actor
-- profiling
+- threat-actor-profiling
 - maltego
 - spiderfoot
 - attribution
@@ -21,6 +20,11 @@ nist_csf:
 - ID.RA-05
 - DE.CM-01
 - DE.AE-02
+mitre_attack:
+- T1591
+- T1589
+- T1593
+- T1590
 ---
 # Building Threat Actor Profile from OSINT
 

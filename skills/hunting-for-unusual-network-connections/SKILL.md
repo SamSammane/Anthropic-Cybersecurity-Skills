@@ -1,7 +1,6 @@
 ---
 name: hunting-for-unusual-network-connections
-description: Hunt for unusual network connections by analyzing outbound traffic patterns, rare destinations, non-standard
-  ports, and anomalous connection frequencies from endpoints.
+description: Runs a hypothesis-driven threat hunt for command-and-control activity (T1071) by querying SIEM/EDR network telemetry for anomalous outbound traffic, rare destinations, non-standard ports, and unusual connection frequencies from endpoints. Use when hunting for beaconing/C2 traffic, after threat intel flags suspicious infrastructure, or when alerts fire on anomalous connections.
 domain: cybersecurity
 subdomain: threat-hunting
 tags:
@@ -25,6 +24,12 @@ nist_csf:
 - DE.AE-02
 - DE.AE-07
 - ID.RA-05
+mitre_attack:
+- T1046
+- T1057
+- T1082
+- T1083
+- T1071
 ---
 
 # Hunting For Unusual Network Connections

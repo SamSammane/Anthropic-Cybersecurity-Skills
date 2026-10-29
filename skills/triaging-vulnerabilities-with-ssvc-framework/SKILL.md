@@ -1,7 +1,11 @@
 ---
 name: triaging-vulnerabilities-with-ssvc-framework
-description: Triage and prioritize vulnerabilities using CISA's Stakeholder-Specific Vulnerability Categorization (SSVC) decision
-  tree framework to produce actionable remediation priorities.
+description: Triages and prioritizes vulnerabilities with CISA's Stakeholder-Specific
+  Vulnerability Categorization (SSVC) decision tree, weighing exploitation status
+  (via the CISA KEV catalog and FIRST EPSS API), technical impact, automatability,
+  and mission prevalence to output Track/Track*/Attend/Act decisions. Use when
+  prioritizing vulnerability scan results (OpenVAS, Nessus, Qualys) for remediation
+  planning beyond raw CVSS scores.
 domain: cybersecurity
 subdomain: vulnerability-management
 tags:
@@ -21,6 +25,10 @@ nist_csf:
 - ID.RA-02
 - ID.IM-02
 - ID.RA-06
+mitre_attack:
+- T1190
+- T1203
+- T1068
 ---
 
 # Triaging Vulnerabilities with SSVC Framework

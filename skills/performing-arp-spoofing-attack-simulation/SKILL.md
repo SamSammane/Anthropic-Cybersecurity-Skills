@@ -1,7 +1,11 @@
 ---
 name: performing-arp-spoofing-attack-simulation
-description: 'Simulates ARP spoofing attacks in authorized lab or pentest environments using arpspoof, Ettercap, and Scapy
-  to demonstrate man-in-the-middle risks, test network detection capabilities, and validate ARP inspection countermeasures.
+description: 'Simulates ARP spoofing/cache-poisoning attacks in authorized lab or
+  pentest environments using arpspoof, Ettercap, and Scapy to demonstrate man-in-the-middle
+  risk and validate Dynamic ARP Inspection, port security, and network monitoring
+  detections. Use when testing whether switches, IDS/IPS, or a SIEM detect ARP spoofing
+  under written authorization; do not use on production networks without explicit
+  approval.
 
   '
 domain: cybersecurity
@@ -20,6 +24,11 @@ nist_csf:
 - DE.CM-01
 - ID.AM-03
 - PR.DS-02
+mitre_attack:
+- T1046
+- T1040
+- T1557
+- T1071
 ---
 # Performing ARP Spoofing Attack Simulation
 

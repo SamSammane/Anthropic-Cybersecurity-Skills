@@ -1,12 +1,6 @@
 ---
 name: conducting-external-reconnaissance-with-osint
-description: 'Conducts external reconnaissance using Open Source Intelligence (OSINT) techniques to map an organization''s
-  external attack surface without directly interacting with target systems. The tester gathers information from public sources
-  including DNS records, certificate transparency logs, search engines, social media, code repositories, and data breach databases
-  to build a comprehensive target profile. Activates for requests involving OSINT reconnaissance, external footprinting, attack
-  surface mapping, or passive information gathering.
-
-  '
+description: Conduct external recon using OSINT techniques to map an organization's external attack surface without touching target systems, gathering DNS records, certificate transparency logs, search results, social media, code repositories, and breach databases into a target profile. Use for the passive info-gathering phase of a pentest, external footprinting, or collecting employee/email intel for a social engineering campaign.
 domain: cybersecurity
 subdomain: penetration-testing
 tags:
@@ -23,6 +17,11 @@ nist_csf:
 - ID.RA-06
 - GV.OV-02
 - DE.AE-07
+mitre_attack:
+- T1595
+- T1592
+- T1589
+- T1590
 ---
 # Conducting External Reconnaissance with OSINT
 

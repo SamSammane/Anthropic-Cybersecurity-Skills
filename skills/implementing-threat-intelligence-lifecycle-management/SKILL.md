@@ -1,7 +1,11 @@
 ---
 name: implementing-threat-intelligence-lifecycle-management
-description: Implement a structured threat intelligence lifecycle encompassing planning, collection, processing, analysis,
-  dissemination, and feedback stages to produce actionable intelligence for organizational decision-making.
+description: Build out a full CTI program around the six-phase threat intelligence
+  lifecycle (direction, collection, processing, analysis, dissemination, feedback),
+  including defining intelligence requirements, building a collection pipeline, normalizing
+  data, and tracking dissemination feedback. Use when standing up or maturing a threat
+  intelligence program, defining intelligence requirements, or designing collection-to-dissemination
+  workflows for a CTI team.
 domain: cybersecurity
 subdomain: threat-intelligence
 tags:
@@ -21,6 +25,11 @@ nist_csf:
 - ID.RA-05
 - DE.CM-01
 - DE.AE-02
+mitre_attack:
+- T1591
+- T1592
+- T1593
+- T1589
 ---
 # Implementing Threat Intelligence Lifecycle Management
 

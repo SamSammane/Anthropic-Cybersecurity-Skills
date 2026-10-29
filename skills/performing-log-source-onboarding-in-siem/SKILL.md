@@ -1,7 +1,11 @@
 ---
 name: performing-log-source-onboarding-in-siem
-description: Perform structured log source onboarding into SIEM platforms by configuring collectors, parsers, normalization,
-  and validation for complete security visibility.
+description: Perform structured log source onboarding into SIEM platforms (Splunk,
+  Elastic, Sentinel, QRadar, or similar) by prioritizing sources with a tiered value
+  framework, configuring collectors, building parsers, normalizing fields to a common
+  schema (e.g. CIM), and validating data quality. Use when planning or executing
+  the integration of new log sources — such as Active Directory, firewalls, EDR,
+  VPN, DNS, or cloud audit logs — into a SIEM for security monitoring and detection.
 domain: cybersecurity
 subdomain: soc-operations
 tags:
@@ -20,6 +24,11 @@ nist_csf:
 - DE.AE-02
 - RS.MA-01
 - DE.AE-06
+mitre_attack:
+- T1078
+- T1685.002
+- T1685.005
+- T1566
 ---
 
 # Performing Log Source Onboarding in SIEM

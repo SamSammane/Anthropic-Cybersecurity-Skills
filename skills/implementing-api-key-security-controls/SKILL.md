@@ -1,12 +1,11 @@
 ---
 name: implementing-api-key-security-controls
-description: 'Implements secure API key generation, storage, rotation, and revocation controls to protect API authentication
-  credentials from leakage, brute force, and abuse. The engineer designs API key formats with sufficient entropy, implements
-  secure hashing for storage, enforces per-key scoping and rate limiting, monitors for leaked keys in public repositories,
-  and builds key rotation workflows. Activates for requests involving API key management, API key security, key rotation policy,
-  or API credential protection.
-
-  '
+description: 'Implements secure API key generation with sufficient entropy, server-side
+  hashing (SHA-256/bcrypt) instead of plaintext storage, per-key scoping to endpoints/IPs/rate
+  limits, zero-downtime rotation, and automated leak monitoring across GitHub repos,
+  logs, and client-side code. Use when designing API key formats, building key rotation
+  or revocation workflows, or protecting server-to-server API credentials from leakage,
+  brute force, and abuse.'
 domain: cybersecurity
 subdomain: api-security
 tags:
@@ -31,6 +30,12 @@ nist_csf:
 - ID.RA-01
 - PR.DS-10
 - DE.CM-01
+mitre_attack:
+- T1190
+- T1059.007
+- T1552.001
+- T1003
+- T1110
 ---
 # Implementing API Key Security Controls
 

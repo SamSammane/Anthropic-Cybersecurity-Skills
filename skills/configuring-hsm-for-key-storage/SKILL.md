@@ -1,7 +1,10 @@
 ---
 name: configuring-hsm-for-key-storage
-description: Hardware Security Modules (HSMs) are tamper-resistant physical devices that safeguard cryptographic keys and
-  perform cryptographic operations in a hardened environment. Keys stored in an HSM never lea
+description: Configures Hardware Security Modules for cryptographic key storage
+  using the PKCS#11 standard interface, covering key generation, signing, encryption,
+  and key management on physical HSMs and SoftHSM2 for development. Use when protecting
+  cryptographic keys so they never leave a hardened device boundary, or when building
+  and testing PKCS#11-based key management workflows.
 domain: cybersecurity
 subdomain: cryptography
 tags:
@@ -25,6 +28,10 @@ nist_csf:
 - PR.DS-01
 - PR.DS-02
 - PR.DS-10
+mitre_attack:
+- T1552.004
+- T1555
+- T1078
 ---
 # Configuring HSM for Key Storage
 

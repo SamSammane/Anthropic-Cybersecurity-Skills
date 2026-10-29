@@ -1,7 +1,10 @@
 ---
 name: performing-cloud-native-threat-hunting-with-aws-detective
-description: Hunt for threats in AWS environments using Detective behavior graphs, entity investigation timelines, GuardDuty
-  finding correlation, and automated entity profiling across IAM users, EC2 instances, and IP addresses.
+description: Investigate AWS security incidents using Amazon Detective's behavior graphs,
+  built from CloudTrail, VPC Flow Logs, GuardDuty, and EKS audit logs, to trace entity
+  timelines and profile IAM users, roles, EC2 instances, and IP addresses for lateral
+  movement. Use when triaging GuardDuty findings, investigating a suspected AWS compromise,
+  or reconstructing an attacker's activity timeline across AWS accounts.
 domain: cybersecurity
 subdomain: cloud-security
 tags:
@@ -22,6 +25,12 @@ nist_csf:
 - ID.AM-08
 - GV.SC-06
 - DE.CM-01
+mitre_attack:
+- T1078.004
+- T1530
+- T1537
+- T1580
+- T1071
 ---
 
 # Performing Cloud-Native Threat Hunting with AWS Detective

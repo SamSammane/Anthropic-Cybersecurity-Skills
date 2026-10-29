@@ -1,7 +1,14 @@
 ---
 name: performing-kubernetes-cis-benchmark-with-kube-bench
-description: Audit Kubernetes cluster security posture against CIS benchmarks using kube-bench with automated checks for control
-  plane, worker nodes, and RBAC.
+description: >-
+  Turns kube-bench output into a finished CIS Kubernetes Benchmark audit: interpreting
+  PASS/FAIL/WARN per control, judging which failures are genuine on a managed cluster, writing
+  remediation, and packaging evidence for SOC 2 or PCI DSS. Use when conducting a scheduled
+  compliance audit, triaging kube-bench results, deciding which controls are not applicable on
+  EKS, GKE, or AKS, or producing hardening evidence for an auditor. Keywords: CIS Kubernetes
+  Benchmark, control plane, remediation, compliance evidence, SOC 2, PCI DSS, managed cluster
+  exception. Do not use for installing and running the tool - use
+  benchmarking-kubernetes-with-kube-bench.
 domain: cybersecurity
 subdomain: container-security
 tags:
@@ -19,6 +26,11 @@ nist_csf:
 - PR.IR-01
 - ID.AM-08
 - DE.CM-01
+mitre_attack:
+- T1610
+- T1611
+- T1609
+- T1525
 ---
 
 # Performing Kubernetes CIS Benchmark with kube-bench

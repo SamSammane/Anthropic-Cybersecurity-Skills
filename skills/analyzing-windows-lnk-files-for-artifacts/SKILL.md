@@ -1,7 +1,9 @@
 ---
 name: analyzing-windows-lnk-files-for-artifacts
-description: Parse Windows LNK shortcut files to extract target paths, timestamps, volume information, and machine identifiers
-  for forensic timeline reconstruction.
+description: Parse Windows LNK shortcut files to extract target paths, MAC timestamps,
+  volume serial numbers, and machine identifiers for forensic timeline reconstruction.
+  Use when investigating recently-accessed files, tracking removable media or network
+  paths referenced by shortcuts, or building a DFIR timeline from LNK artifacts.
 domain: cybersecurity
 subdomain: digital-forensics
 tags:
@@ -15,10 +17,15 @@ version: '1.0'
 author: mahipal
 license: Apache-2.0
 nist_csf:
-- RS.AN-01
 - RS.AN-03
 - DE.AE-02
 - RS.MA-01
+mitre_attack:
+- T1547.001
+- T1204.002
+- T1005
+- T1025
+- T1074.001
 ---
 
 # Analyzing Windows LNK Files for Artifacts

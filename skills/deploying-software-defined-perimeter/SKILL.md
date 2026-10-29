@@ -1,7 +1,6 @@
 ---
 name: deploying-software-defined-perimeter
-description: Deploy a Software-Defined Perimeter using the CSA v2.0 specification with Single Packet Authorization, mutual
-  TLS, and SDP controller/gateway configuration to enforce zero trust network access.
+description: Deploys a Software-Defined Perimeter per the CSA v2.0 specification, configuring Single Packet Authorization, mutual TLS, and SDP controller/gateway components to enforce zero trust network access. Use when building or hardening zero trust network architecture, implementing SPA-based "invisible" infrastructure that cloaks services from unauthenticated scanning, or meeting compliance requirements for zero trust network access.
 domain: cybersecurity
 subdomain: zero-trust-architecture
 tags:
@@ -18,6 +17,12 @@ nist_csf:
 - PR.AA-05
 - PR.IR-01
 - GV.PO-01
+mitre_attack:
+- T1133
+- T1078
+- T1021
+- T1046
+- T1190
 ---
 
 # Deploying Software-Defined Perimeter

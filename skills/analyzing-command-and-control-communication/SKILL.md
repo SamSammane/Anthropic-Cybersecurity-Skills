@@ -1,9 +1,11 @@
 ---
 name: analyzing-command-and-control-communication
-description: 'Analyzes malware command-and-control (C2) communication protocols to understand beacon patterns, command structures,
-  data encoding, and infrastructure. Covers HTTP, HTTPS, DNS, and custom protocol C2 analysis for detection development and
-  threat intelligence. Activates for requests involving C2 analysis, beacon detection, C2 protocol reverse engineering, or
-  command-and-control infrastructure mapping.
+description: 'Analyzes malware C2 communication over HTTP, HTTPS, DNS, and custom
+  protocols to reverse-engineer beacon patterns, command structures, data encoding,
+  and infrastructure (primary servers, fallback domains, dead drops). Use after
+  reverse engineering reveals network traffic needing protocol analysis or when
+  building detection signatures for a framework like Cobalt Strike, Metasploit,
+  or Sliver.
 
   '
 domain: cybersecurity
@@ -22,6 +24,12 @@ nist_csf:
 - RS.AN-03
 - ID.RA-01
 - DE.CM-01
+mitre_attack:
+- T1071.001
+- T1573
+- T1571
+- T1008
+- T1095
 ---
 
 # Analyzing Command-and-Control Communication

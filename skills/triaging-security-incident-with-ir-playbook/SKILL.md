@@ -1,7 +1,10 @@
 ---
 name: triaging-security-incident-with-ir-playbook
-description: Classify and prioritize security incidents using structured IR playbooks to determine severity, assign response
-  teams, and initiate appropriate response procedures.
+description: Classifies and prioritizes security incidents using structured IR
+  playbooks and SIEM/case-management queries (Splunk, TheHive) to determine severity,
+  assign response teams, and initiate the appropriate response procedures. Use when
+  a new SOC alert needs triage, multiple concurrent incidents require prioritization,
+  or automated triage rules need validation or tuning.
 domain: cybersecurity
 subdomain: incident-response
 tags:
@@ -11,8 +14,9 @@ tags:
 - severity-classification
 - soc
 mitre_attack:
-- T1190
-- T1566
+- T1486
+- T1490
+- T1070
 - T1078
 version: '1.0'
 author: mahipal

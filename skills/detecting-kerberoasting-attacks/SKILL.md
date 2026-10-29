@@ -1,7 +1,10 @@
 ---
 name: detecting-kerberoasting-attacks
-description: Detect Kerberoasting attacks by monitoring for anomalous Kerberos TGS requests targeting service accounts with
-  SPNs for offline password cracking.
+description: Detect Kerberoasting attacks by monitoring for anomalous Kerberos TGS
+  requests (Event ID 4769) targeting service accounts with SPNs, which attackers request
+  offline to crack service account passwords. Use when hunting for MITRE T1558 credential
+  access activity or investigating suspected service account password cracking attempts
+  in Active Directory Kerberos logs.
 domain: cybersecurity
 subdomain: threat-hunting
 tags:
@@ -26,6 +29,12 @@ nist_csf:
 - DE.AE-02
 - DE.AE-07
 - ID.RA-05
+mitre_attack:
+- T1046
+- T1057
+- T1082
+- T1083
+- T1003
 ---
 
 # Detecting Kerberoasting Attacks

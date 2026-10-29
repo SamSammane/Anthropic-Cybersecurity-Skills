@@ -1,9 +1,12 @@
 ---
 name: performing-insider-threat-investigation
-description: 'Investigates insider threat incidents involving employees, contractors, or trusted partners who misuse authorized
-  access to steal data, sabotage systems, or violate security policies. Combines digital forensics, user behavior analytics,
-  and HR/legal coordination to build an evidence-based case. Activates for requests involving insider threat investigation,
-  employee data theft, privilege misuse, user behavior anomaly, or internal threat detection.
+description: 'Investigates insider threat incidents involving employees, contractors,
+  or trusted partners who misuse authorized access to steal data, sabotage systems,
+  or violate security policies, combining digital forensics, user behavior analytics,
+  and HR/legal coordination to build an evidence-based case. Use when DLP alerts flag
+  large data transfers to personal cloud storage or USB devices, when UBA detects
+  anomalous access patterns for a user account, or when investigating employee data
+  theft, privilege misuse, or internal threat detection requests.
 
   '
 domain: cybersecurity
@@ -15,10 +18,11 @@ tags:
 - privilege-misuse
 - DFIR
 mitre_attack:
+- T1486
+- T1490
+- T1070
 - T1078
 - T1048
-- T1567
-- T1114
 version: 1.0.0
 author: mahipal
 license: Apache-2.0

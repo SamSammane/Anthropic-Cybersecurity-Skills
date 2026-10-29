@@ -1,7 +1,10 @@
 ---
 name: configuring-suricata-for-network-monitoring
-description: 'Deploys and configures Suricata IDS/IPS with Emerging Threats rulesets, EVE JSON logging, and custom rules for
-  real-time network traffic inspection, threat detection, and integration with SIEM platforms for centralized security monitoring.
+description: 'Deploys and configures Suricata IDS/IPS with Emerging Threats rulesets,
+  EVE JSON logging, and custom rules for high-throughput, protocol-aware traffic
+  inspection (HTTP, TLS, DNS, SMB) and SIEM integration. Use when running Suricata
+  in IDS or inline IPS mode to detect or block malicious traffic, or when combining
+  signature-based and protocol anomaly detection with file extraction.
 
   '
 domain: cybersecurity
@@ -20,6 +23,12 @@ nist_csf:
 - DE.CM-01
 - ID.AM-03
 - PR.DS-02
+mitre_attack:
+- T1046
+- T1071.001
+- T1572
+- T1048
+- T1573.001
 ---
 # Configuring Suricata for Network Monitoring
 

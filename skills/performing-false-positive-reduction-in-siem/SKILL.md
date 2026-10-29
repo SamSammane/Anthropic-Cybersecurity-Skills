@@ -1,7 +1,9 @@
 ---
 name: performing-false-positive-reduction-in-siem
-description: Perform systematic SIEM false positive reduction through rule tuning, threshold adjustment, correlation refinement,
-  and threat intelligence enrichment to combat alert fatigue.
+description: Reduces SIEM false positives through systematic rule tuning, threshold
+  adjustment, correlation logic refinement, allowlisting, and threat intelligence
+  enrichment. Use when SOC analysts are overwhelmed by alert noise, when tuning noisy
+  detection rules, or during a quarterly SIEM rule review to cut alert fatigue.
 domain: cybersecurity
 subdomain: soc-operations
 tags:
@@ -26,6 +28,11 @@ nist_csf:
 - DE.AE-02
 - RS.MA-01
 - DE.AE-06
+mitre_attack:
+- T1078
+- T1685.002
+- T1685.005
+- T1566
 ---
 
 # Performing False Positive Reduction in SIEM
